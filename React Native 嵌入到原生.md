@@ -23,7 +23,7 @@
 
 > *其中，“react”  “react-native” 为其版本号*
 
-在终端cd到该目录，执行 **npm install**
+在终端cd到该目录，执行 `npm install`
 
 
 
@@ -49,7 +49,7 @@ target 'LiveSDKTest' do
 end
 ```
 
-执行 **pod install** 
+执行 `pod install` 
 
 > 成功后尝试编译，若失败，进入 *LiveSDKTest  => Build Phases => Link Binary With Libraries* 添加 **libReact.a** framework文件
 
@@ -63,7 +63,7 @@ end
 AppRegistry.registerComponent('LiveSDKTest', () => DemoClass);
 ```
 
-执行 **mkdir RNComponent** 创建文件夹存放js文件（RN组件）
+执行 `mkdir RNComponent` 创建文件夹存放js文件（RN组件）
 
 至此，你的项目文件结构应该是这样的：
 
@@ -71,7 +71,7 @@ AppRegistry.registerComponent('LiveSDKTest', () => DemoClass);
 
 #### 四、 代码编写
 
-RN组件由一个 UIView 作为容器，初始化方法如下(需要布局)，自行使用。
+RN组件由一个 `UIView` 作为容器，初始化方法如下(需要布局)，自行使用。
 
 ```objective-c
 #import <RCTRootView.h>
@@ -82,10 +82,10 @@ NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.b
 RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation moduleName:@"LiveSDKTest" initialProperties:nil launchOptions:nil];
 ```
 
-> 可直接赋值ViewController.view，也可作为子视图 addSubview ，等等
+> 可直接赋值`ViewController.view`，也可作为子视图 `addSubview` ，等等
 
-在 *info.plist*  添加 **App Transport Security Settings** 设置 **Allow Arbitrary Loads** 布尔值为 **YES**
+在 *info.plist*  添加 `App Transport Security Settings` 设置 `Allow Arbitrary Loads` 布尔值为 **YES**
 
 
 
-##### <u>至此，大公告成！接下来运行调试步骤与纯RN项目相同。</u>
+### 至此，大公告成！接下来运行调试步骤与纯RN项目相同。

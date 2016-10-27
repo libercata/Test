@@ -88,4 +88,6 @@ RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation mo
 
 
 
-### 至此，大公告成！接下来运行调试步骤与纯RN项目相同。
+#### 五、编译调试
+
+至此，大公告成！接下来调试运行步骤与纯RN项目相同，这里不再赘述。
